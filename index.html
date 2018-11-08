@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Github Users</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css" type="text/css">
+  </head>
+  <body>
+    <div id="container">
+    <form id="userForm">
+      <input type="text" id="inputVal" required placeholder="search username...">
+      <input type="submit" value="Search">
+        </form>
+
+     <p id="errors"></p>
+        <div id="result" class="hidden">
+            <div class="d-flex"><img src="githubLogo.png" width="100" height="100"><h2 id="userName"></h2></div>
+           <h2>Repositories</h2>
+          <ul class="list-group" id="result-list">
+          </ul>
+        </div>
+      </div>
+       <script src="script.js"></script>
+  </body>
+</html>
