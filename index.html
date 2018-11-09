@@ -6,15 +6,15 @@
     <title>Github Users</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css.css" type="text/css">
+    
   </head>
-  <body>
-    <div id="container">
-    <form id="userForm">
-      <input type="text" id="inputVal" required placeholder="search username...">
-      <input type="submit" value="Search">
-        </form>
-
-     <p id="errors"></p>
+  <body class="bg-light text-dark">
+    <div id="container" class="card container shadow-lg p-4 mb-4 bg-white">
+    <form id="userForm" class="d-flex mt-3 mb-3">
+      <input type="text" id="inputVal" class="form-control" required placeholder="search username...">
+      <button type="submit" class="btn ml-3">Search</button>
+        </form>             
+     <p id="errors" class="hidden"></p>
         <div id="result" class="hidden">
             <div class="d-flex"><img src="githubLogo.png" width="100" height="100"><h2 id="userName"></h2></div>
            <h2>Repositories</h2>
